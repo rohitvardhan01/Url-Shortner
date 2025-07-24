@@ -48,11 +48,13 @@ app will run at http://localhost:3000/
 1. Clone repo and open in IDE
 2. In `application.properties`:
     ```properties
-    server.port=7070
-    spring.h2.console.enabled=true
+    spring.application.name=backend
     spring.datasource.url=jdbc:h2:mem:testdb
     spring.datasource.driverClassName=org.h2.Driver
+    spring.datasource.username=sa
+    spring.datasource.password=
     spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+    spring.h2.console.enabled=true
     ```
 3. Run the application (`UrlShortenerApplication.java`)
 
